@@ -1,0 +1,10 @@
+[install]
+# Use exact versions from lockfile for reproducible builds
+exact = false
+
+[install.cache]
+dir = "~/.bun/install/cache"
+
+[test]
+# Directory bun test scans by default
+root = "./tests"

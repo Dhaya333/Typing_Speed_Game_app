@@ -1,0 +1,9 @@
+type LeaderboardEntry {
+  rank: Int!
+  username: String!
+  bestTimeMs: Int!
+}
+
+extend type Query {
+  leaderboard(limit: Int = 10): [LeaderboardEntry!]!
+}

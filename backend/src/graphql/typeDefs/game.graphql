@@ -1,0 +1,24 @@
+type GameResult {
+  id: ID!
+  totalTimeMs: Int!
+  correctChars: Int!
+  wrongAttempts: Int!
+  penaltyMs: Int!
+  createdAt: String!
+}
+
+input SubmitGameResultInput {
+  totalTimeMs: Int!
+  correctChars: Int!
+  wrongAttempts: Int!
+  penaltyMs: Int!
+}
+
+extend type Query {
+  myGameHistory: [GameResult!]!
+  myBestScore: GameResult
+}
+
+extend type Mutation {
+  submitGameResult(input: SubmitGameResultInput!): GameResult!
+}
