@@ -285,5 +285,4 @@ Covers: the core typing game state machine (correct keypress advances, incorrect
 ## Working 
 
 
-
-A short walkthrough covering the implementation and key technical decisions: **[link here]**
+A short walkthrough covering the implementation and key technical decisions: **[link here]([text](https://drive.google.com/file/d/16ZlxrEnbwnjiY5f-GHPOY8y0dCbtxpLC/view?usp=drive_link))**
